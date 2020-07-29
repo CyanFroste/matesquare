@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap");
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+header {
+  height: 100px; }
+
+main {
+  height: calc(100vh - 100px); }
 
 /*# sourceMappingURL=main.css.map */
