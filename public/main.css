@@ -1,3 +1,4 @@
+/* blue swatches in Hex */
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap");
 * {
   padding: 0;
@@ -10,9 +11,17 @@
   box-sizing: border-box;
 }
 
-/* blue swatches in Hex */
-header {
-  height: 100px;
+h1, h2, h3, h4, p, a, span, div {
+  font-family: "Sora", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
 }
 
 header, main, section, aside {
@@ -30,6 +39,16 @@ aside {
 
 section {
   flex-grow: 1;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+}
+header .navbar {
+  height: 100%;
+  background-color: red;
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */
