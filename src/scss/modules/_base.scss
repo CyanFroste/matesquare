@@ -15,7 +15,7 @@
 
 
 h1, h2, h3, h4, p, a, span, div{	
-	@include font($ff: $sora, $fs:1em, $fw: normal, $ls: normal, $lh: normal, $c: #000);
+	@include font($ff: $sora, $fs: .95em, $fw: normal, $ls: normal, $lh: normal, $c: #000);
 }
 
 a{
