@@ -1,7 +1,7 @@
 header{
 	height: 100px;
 	width: 100vw;
-	background-color: red;
+	background-color: $black;
 
 	.nav-bar{		
 		@include container;
