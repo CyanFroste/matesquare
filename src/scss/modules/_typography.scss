@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
+
+$sora: 'Sora', sans-serif;
+$teko: 'Teko', sans-serif;
+
+@mixin font($ff: $sora, $fs:1em, $fw: normal, $ls: normal, $lh: normal, $c: #000){
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	letter-spacing: $ls;
+	line-height: $lh;
+	color: $c;
+}
