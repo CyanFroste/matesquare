@@ -8,10 +8,18 @@
 *::after {
   box-sizing: border-box; }
 
-header {
-  height: 100px; }
+a {
+  text-decoration: none; }
 
 main {
   height: calc(100vh - 100px); }
+
+header {
+  height: 100px;
+  width: 100vw; }
+  header .navbar {
+    height: 100%;
+    background-color: red;
+    display: flex; }
 
 /*# sourceMappingURL=main.css.map */
