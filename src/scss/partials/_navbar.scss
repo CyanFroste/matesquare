@@ -1,12 +1,35 @@
 header{
 	height: 100px;
 	width: 100vw;
+	background-color: red;
 
-	.navbar{		
+	.nav-bar{		
+		@include container;
 		height: 100%;
-		background-color: red;
-		display: flex;
 		
+		display: flex;
+		align-items: center;
+
+		.nav-search{
+			justify-self: flex-start;
+			margin-left: 40px;
+			input{
+				padding: 10px;
+				border: 0;
+			}
+		}
+		
+		.nav-links{			
+			display: flex;
+			justify-self: flex-end;
+			margin-left: auto;
+			justify-content: space-between;
+			li{
+				padding: 0 20px;
+			}
+		}
+
+
 	}
 
 }
