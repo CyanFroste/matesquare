@@ -7,25 +7,64 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // BASE
-body{
+body {
 	background-color: $black;
 }
 
-h1, h2, h3, h4, p, a, span, div{	
-	@include font($ff: $sora, $fs: .95em, $fw: normal, $ls: normal, $lh: normal, $c: $white);
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+div {
+	@include font(
+		$ff: $sora,
+		$fs: 0.95em,
+		$fw: normal,
+		$ls: normal,
+		$lh: normal,
+		$c: $white
+	);
 }
 
-a{
+a {
 	text-decoration: none;
-	&:hover{
+	&:hover {
 		color: $accent;
 	}
 }
 
-li{
+li {
 	list-style-type: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: lighten($color: $black, $amount: 10);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: lighten($color: $black, $amount: 20);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: lighten($color: $black, $amount: 30);
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+	border-radius: $br-5;
 }

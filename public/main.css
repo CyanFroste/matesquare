@@ -15,7 +15,14 @@ body {
   background-color: #141414;
 }
 
-h1, h2, h3, h4, p, a, span, div {
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+div {
   font-family: "Sora", sans-serif;
   font-size: 0.95em;
   font-weight: normal;
@@ -33,6 +40,31 @@ a:hover {
 
 li {
   list-style-type: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474747;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
 }
 
 .icon {
@@ -130,7 +162,7 @@ header .nav-bar .nav-links li {
 .active-box {
   display: flex;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px 5px;
 }
 .active-box:hover {
