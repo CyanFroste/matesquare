@@ -1,0 +1,17 @@
+// some global classes used throughout the pages
+.icon{
+	@include icon;
+	&:hover{
+		fill: $accent;
+	}
+}
+
+.profile-icon{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: $accent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

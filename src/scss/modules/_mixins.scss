@@ -3,3 +3,9 @@
 	max-width: $mw;
 	margin: 0 auto;
 }
+
+@mixin icon($w: 24px, $h: 24px, $fill: $white){
+	width: $w;
+	height: $h;
+	fill: $fill;
+}

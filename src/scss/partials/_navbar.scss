@@ -6,17 +6,33 @@ header{
 	.nav-bar{		
 		@include container;
 		height: 100%;
-		
 		display: flex;
 		align-items: center;
 
-		.nav-search{
-			justify-self: flex-start;
-			margin-left: 40px;
-			input{
-				padding: 10px;
-				border: 0;
+		svg{
+			// to make svg align to the bottom of the 'a' tag instead of its baseline
+			vertical-align: bottom;
+		}
+		a{
+			display: inline-block;			
+		}		
+
+		.logo{
+			&::before{
+				content: "";
+				display: inline-block;
+				height: 20px;
+				width: 20px;
+				border-radius: 2px;
+				margin-right: 4px;
+				background-color: $accent;
 			}
+			@include font($ff: $teko, $fs: 2.4em, $fw: normal, $ls: .02em, $lh: normal, $c: $white);
+		}
+
+		.nav-search{
+			justify-self: flex-start;			
+			margin-left: 40px;			
 		}
 		
 		.nav-links{			
@@ -24,11 +40,11 @@ header{
 			justify-self: flex-end;
 			margin-left: auto;
 			justify-content: space-between;
+			align-items: center;
 			li{
 				padding: 0 20px;
 			}
 		}
-
 
 	}
 
