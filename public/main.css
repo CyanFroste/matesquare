@@ -12,7 +12,14 @@
 body {
   background-color: #141414; }
 
-h1, h2, h3, h4, p, a, span, div {
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+div {
   font-family: "Sora", sans-serif;
   font-size: 0.95em;
   font-weight: normal;
@@ -28,6 +35,26 @@ a {
 li {
   list-style-type: none; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474747; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161; }
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px; }
+
 .icon {
   width: 24px;
   height: 24px;
@@ -38,7 +65,8 @@ li {
 .profile-icon {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
+  border-radius: 5px;
+  overflow: hidden;
   background-color: #FF5E5B;
   display: flex;
   justify-content: center;
@@ -104,10 +132,29 @@ header {
       header .nav-bar .nav-links li {
         padding: 0 20px; }
 
+.feed-wrapper .feed {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #FBFBFF; }
+  .feed-wrapper .feed .posts-list {
+    width: 100%;
+    height: 100%;
+    background-color: #FF5E5B; }
+  .feed-wrapper .feed .post {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+    .feed-wrapper .feed .post img {
+      width: 100%; }
+
 .active-box {
   display: flex;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px 5px; }
   .active-box:hover {
     background: #2e2e2e; }
